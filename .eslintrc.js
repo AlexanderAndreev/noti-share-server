@@ -17,7 +17,13 @@ module.exports = {
             },
         ],
         '@typescript-eslint/camelcase': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',     
+        '@typescript-eslint/no-unused-vars': ['error', {
+            'vars': 'all',
+            'args': 'after-used',
+            'ignoreRestSiblings': false,
+            'argsIgnorePattern': '^_',
+        }],
         '@typescript-eslint/explicit-function-return-type': 'off'
     },
     plugins: [
