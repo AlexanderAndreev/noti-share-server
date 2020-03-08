@@ -5,3 +5,5 @@ const get = (name: string, required = false): string => {
 };
 
 export const PORT = +get('PORT') || 8000;
+
+export const MONGO_URL = get('MONGO_URL', true);
